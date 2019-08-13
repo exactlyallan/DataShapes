@@ -1,0 +1,12 @@
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.pem
+node_modules
+*.un~
+Session.vim
+.netrwhist
+*~
+.DS_Store
+node_modules
+*.sublime-project
+*.sublime-workspace
