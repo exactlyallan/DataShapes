@@ -12,16 +12,16 @@ Procedurally generated shape sandbox using threejs.
 To install the Node dependencies:
 > npm install
 
-To run locally:
-> npm run
+To build:
+> npm run build
 
 To run webpack dever server:
-> npm run-dev
+> npm run dev
 
 
 ## Demo
 
-Live demo [https://exactlyallan.github.io/DataShape/](https://exactlyallan.github.io/DataShape/)
+Live demo [https://exactlyallan.github.io/DataShapes/](https://exactlyallan.github.io/DataShapes/)
 
 
 ## License

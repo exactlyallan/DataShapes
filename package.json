@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --env.prod=true --mode=production",
-    "dev": "webpack-dev-server --env.prod=false --mode=development --open"
+    "build": "webpack --env.prod=true",
+    "dev": "webpack-dev-server --env.prod=false --open"
   },
   "keywords": [
     "dataviz",
@@ -17,6 +17,7 @@
   "author": "allan enemark",
   "license": "ISC",
   "dependencies": {
+    "dat.gui": "^0.7.6",
     "three": "^0.107.0"
   },
   "devDependencies": {

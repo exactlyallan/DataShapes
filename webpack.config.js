@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = env => {
 
-    console.log('Production: ', env.prod);
+    console.log("> set to: ", (env.prod===false) ? 'production' : 'development') // why this has to be a double negative idunno 
 
     return {
         entry: './src/index.js',
@@ -13,7 +13,8 @@ module.exports = env => {
             filename: 'bundle.js',
             path: path.resolve(__dirname, 'docs')
         },
-        devtool: env.prod ? 'none' : 'inline-source-map',
+        devtool: (!env.prod) ? 'none' : 'source-map',
+        mode: (!env.prod) ? 'production' : 'development',
         devServer: {
             contentBase: './src',
             port: 8000
@@ -26,8 +27,7 @@ module.exports = env => {
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            publicPath: './docs/',
-                            hmr: env.prod === 'development',
+                            publicPath: './docs/'
                         },
                     },
                     'css-loader'
