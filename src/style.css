@@ -8,17 +8,6 @@ body {
 	padding: 0;
 }
 
-nav {
-	position: absolute;
-	left: 0;
-	top: 0;
-	margin-left: 2rem;
-	padding: 0.5em 0.5em 0.5em 0em;
-	height: auto;
-	font-size: 2em;
-	z-index: 999;
-}
-
 canvas {
 	display: block;
 }
@@ -27,19 +16,19 @@ canvas {
 	position: absolute;
 	z-index: 998;
 	background-color: black;
-	opacity: 0.9;
-	width: 95vw;
+	opacity: 0.6;
+	width: 94vw;
 	height: 20vh;
 	top: 0;
 	left: 0;
-	margin: 4em 2em;
+	margin: 4vh 3vw;
 }
 
 #dat-gui {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	margin: 3em 2em;
+	margin: 4vh 3vw;
 }
 
 #content {
